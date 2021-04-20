@@ -1,3 +1,7 @@
+# Linux Virtual Background
+Convenient virtual background provider for your video calls. Works as a virtual camera
+on linux systems and as such can be used with most (if not all) video call apps.
+
 ## Setup
 All required setup for Debian-based distros are done 
 by the utility script (update as required).
