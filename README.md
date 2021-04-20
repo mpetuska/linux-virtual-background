@@ -37,8 +37,8 @@ docker-compose down
 Default setup works in CPU mode which is a lot less performant (expect camera lags).
 If you have NVIDIA GPU available on your machine, 
 you can swith to GPU mode, which performs significantly better:
-1. Uncommenting `./docker-compose.yml#L8`
-2. Commenting-out `./docker-compose.yml#L9`
+1. Uncomment `./docker-compose.yml#L8`
+2. Comment-out `./docker-compose.yml#L9`
 
 ## Credits
 Most of it is based on the wonderful [article](https://elder.dev/posts/open-source-virtual-background/)
