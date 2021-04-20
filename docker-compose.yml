@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  bodypix:
+    network_mode: host
+    build:
+#      Switch to gpu mode if you have NVIDIA GPU available on your machine
+#      context: ./bodypix/gpu
+      context: ./bodypix/cpu
+  fakecam:
+    network_mode: host
+    user: '1000:44' # echo $(id -u):$(getent group video | cut -d: -f3)
+    devices:
+      - /dev/video0
+      - /dev/video1
+      - /dev/video20
+    build:
+      context: ./fakecam
