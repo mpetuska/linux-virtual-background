@@ -40,6 +40,12 @@ you can swith to GPU mode, which performs significantly better:
 1. Uncomment `./docker-compose.yml#L8`
 2. Comment-out `./docker-compose.yml#L9`
 
+## Bash Aliases
+You can add these two bash aliases to `~/.bashrc` for easy control.
+* `alias fakecam-up='/path/to/project/setup.sh; docker-compose -f /path/to/project/docker-compose.yml up -d --build'`
+* `alias fakecam-down='docker-compose -f /path/to/project/docker-compose.yml down'`
+Then you can use `fakecam-up` to start and restart the service and `fakecam-down` to stop it.
+
 ## Credits
 Most of it is based on the wonderful [article](https://elder.dev/posts/open-source-virtual-background/)
 by **Benjamin Elder**. I've just fixed some minor issues and wrapped it into further
