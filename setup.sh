@@ -10,7 +10,7 @@ sudo modprobe v4l2loopback devices=1 video_nr=20 card_label="v4l2loopback" exclu
 
 # Install docker
 curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh
+sudo sh get-docker.sh &
 
 # create a network
 #docker network create --driver bridge fakecam

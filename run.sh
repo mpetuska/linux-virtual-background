@@ -15,4 +15,4 @@ docker run --rm \
   --name=fakecam \
   --network=fakecam \
   -u "$(id -u):$(getent group video | cut -d: -f3)" \
-  $(find /dev -name 'video*' -printf "--device %p ") fakecam
+  $(find /dev -name 'video*' -printf "--device %p ") fakecam/cpu
