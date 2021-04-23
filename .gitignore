@@ -3,3 +3,8 @@
 fakecam/backgrounds/_*
 build/
 venv/
+
+.gradle/
+.jython_cache/
+build/
+externals/
